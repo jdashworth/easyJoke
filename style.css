@@ -1,4 +1,8 @@
-@media screen and (max-width: 767px) {
+@font-face {
+    font-family: easyjet;
+    src: url(easyjetrounded.ttf);
+  }
+  @media screen and (max-width: 767px) {
     html{
         box-sizing: border-box;
         margin:0 auto;
@@ -6,36 +10,51 @@
         font-family: "Cooper";
         font-size: smaller;
     }
-    nav {
-        width: 100%;
-        height: auto;
-        background-color: #ff6600;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-    }
     body{
         display: flex;
         flex-direction: column;
         justify-content: space-between ;
         align-items: center;
     }
+    nav {
+        width: 100%;
+        height: auto;
+        background-image: url(./header.gif);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    
+    }
+    .buttons ul {
+        flex-direction: row;
+    }
     img {
-        padding: 0 auto;
-        margin: 0 auto;
+        width: 100%;
+    }
+   h1 {
+    display: none;
+   }
+    .logo {
+      flex-shrink: 0;
     }
    div.text {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-   }
-    h2{
-        display: flex;
-    }
 
    }
-    
+     h2{
+        display: flex;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+}
     
     html 
     {
@@ -60,14 +79,44 @@ body{
 a {
     color: #ffffff;
 }
-nav {
-    background-color: #ff6600;
+.navbar {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./header.gif);
+    
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
 }
+
+.navbar a {text-decoration: none;}
+.navbar a:hover {text-decoration: underline;}
 nav img {
     height: 90%;
+
+
+}
+button{
+    background: none;
+    border: none;
+    font-family: "Cooper";
+    color: #ffffff;
+}
+.buttons  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+
+}
+.buttons ul li  {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    border: transparent 1px;
+    padding: 5px;
+    float: right;
 
 }
 
@@ -81,13 +130,23 @@ nav img {
 }
 
 div.logo img {
-    width: 50%;
+    width: 30%;
     height: auto;
 
     padding: 10px 5px 10px 10px ;
     
 }
-
+div.background{
+    position: relative;
+}
+h1 {
+    font-size: 3.1em ;
+    font-family: "Libel";
+    position: absolute;
+    top:450px;
+    left:10px;
+    color: #fefefe;
+}
 div.text h2 {
     text-align: center;
     justify-content: center;
@@ -100,5 +159,27 @@ div.text p {
     justify-content: center;
     font-size:medium;
     font-weight: lighter;
+    font-family: 'easyjet';
+    padding: 0px 10px;
 }
+footer {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 
+}
+div.emails ul {
+    list-style: none;
+
+}
+div.emails  ul li{
+    line-height: 2em;
+
+
+}
+div.emails  ul li a{
+    color: #ff6600;
+    font-family: "Cooper";
+    text-decoration: none;
+}
