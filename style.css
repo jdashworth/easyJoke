@@ -1,185 +1,175 @@
 @font-face {
-    font-family: easyjet;
-    src: url(easyjetrounded.ttf);
+  font-family: easyjet;
+  src: url(easyjetrounded.ttf);
+}
+@media only screen and (max-width: 480px) {
+  html {
+    width: 100vw;
+    overflow-x: hidden;
   }
-  @media screen and (max-width: 767px) {
-    html{
-        box-sizing: border-box;
-        margin:0 auto;
-        padding:  0 auto;
-        font-family: "Cooper";
-        font-size: smaller;
-    }
-    body{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between ;
-        align-items: center;
-    }
-    nav {
-        width: 100%;
-        height: auto;
-        background-image: url(./header.gif);
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    
-    }
-    .buttons ul {
-        flex-direction: row;
-    }
-    img {
-        width: 100%;
-    }
-   h1 {
+  .text {
+    margin-left: 0 !important;
+    margin-right: 0 !important;        
+}
+  a {
+    color: #ff6600;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    padding-left: 40px;
+}
+nav {
+    width: 100%;
+    height: auto;
+    background-image: url(./header.gif);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  .buttons ul {
+    flex-direction: row;
+  }
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  h1 {
     display: none;
-   }
-    .logo {
-      flex-shrink: 0;
-    }
-   div.text {
+  }
+  .logo {
+    flex-shrink: 0;
+  }
+  div.text {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
-   }
-     h2{
-        display: flex;
-    }
-    footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-
-}
-    
-    html 
-    {
-        height: 100%;
-       
-    
+  }
+  h2 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
-    display: block;
-    font-size: 1rem;
-    font-family: "Cooper";
-
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
-body{
-    margin: 0px;
-    padding: 0px;
+
+html {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  display: block;
+  font-size: 1rem;
+  font-family: "Cooper";
+}
+body {
+  min-height: 100vh;
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
 }
 a {
-    color: #ffffff;
+  color: #ffffff;
 }
 .navbar {
-    display: flex;
-    flex-direction: column;
-    background-image: url(./header.gif);
-    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.navbar a {text-decoration: none;}
-.navbar a:hover {text-decoration: underline;}
+.navbar a {
+  text-decoration: none;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
 nav img {
-    height: 90%;
-
-
+  height: 90%;
 }
-button{
-    background: none;
-    border: none;
-    font-family: "Cooper";
-    color: #ffffff;
+button {
+  background: none;
+  border: none;
+  font-family: "Cooper";
+  color: #ffffff;
 }
-.buttons  {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-
-
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
-.buttons ul li  {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    border: transparent 1px;
-    padding: 5px;
-    float: right;
-
+.buttons ul li {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  border: transparent 1px;
+  padding: 5px;
+  float: right;
 }
 
 .background {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-    margin: 0px;
-    width: 100%;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: auto;
 }
 
 div.logo img {
-    width: 30%;
-    height: auto;
+  width: 30%;
+  height: auto;
 
-    padding: 10px 5px 10px 10px ;
-    
+  padding: 10px 5px 10px 10px;
 }
-div.background{
-    position: relative;
+div.background {
+  position: relative;
 }
 h1 {
-    font-size: 3.1em ;
-    font-family: "Libel";
-    position: absolute;
-    top:450px;
-    left:10px;
-    color: #fefefe;
+  font-size: 3.1em;
+  font-family: "Libel";
+  position: absolute;
+  top: 450px;
+  left: 10px;
+  color: #fefefe;
 }
 div.text h2 {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
 }
 div.text p {
-    margin: 5px;
-    justify-content: center;
-    font-size:medium;
-    font-weight: lighter;
-    font-family: 'easyjet';
-    padding: 0px 10px;
+  margin: 5px;
+  justify-content: center;
+  font-size: medium;
+  font-weight: lighter;
+  font-family: "easyjet";
+  padding: 0px 10px;
 }
 footer {
-    background-color: #f2f2f2;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 div.emails ul {
-    list-style: none;
-
+  list-style: none;
 }
-div.emails  ul li{
-    line-height: 2em;
-
-
+div.emails ul li {
+  line-height: 2em;
 }
-div.emails  ul li a{
-    color: #ff6600;
-    font-family: "Cooper";
-    text-decoration: none;
+div.emails ul li a {
+  color: #ff6600;
+  font-family: "Cooper";
+  text-decoration: none;
 }
