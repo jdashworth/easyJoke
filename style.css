@@ -14,11 +14,9 @@
   a {
     color: #ff6600;
   }
-  body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between ;
-    padding-left: 40px;
+h1 {
+  display: none;
+}
 }
 nav {
     width: 100%;
@@ -36,9 +34,7 @@ nav {
     max-width: 100% !important;
     height: auto !important;
   }
-  h1 {
-    display: none;
-  }
+  
   .logo {
     flex-shrink: 0;
   }
@@ -55,7 +51,7 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
   }
-}
+
 
 html {
   height: 100%;
@@ -69,15 +65,10 @@ html {
   font-size: 1rem;
   font-family: "Cooper";
 }
-body {
-  min-height: 100vh;
-  /* mobile viewport bug fix */
-  min-height: -webkit-fill-available;
-}
 a {
   color: #ffffff;
 }
-.navbar {
+nav {
   display: flex;
   flex-direction: column;
 
